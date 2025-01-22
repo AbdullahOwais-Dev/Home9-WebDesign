@@ -15,18 +15,10 @@ Home9 is a practice project showcasing a creative and responsive wedding website
 - **JavaScript**
 
 ## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AbdullahOwais-Dev/Home9-WebDesign.
-   
-2. Navigate to the project folder:
-   ```bash
-   cd Home9
-   ```
+1. Clone the repository: `git clone https://github.com/AbdullahOwais-Dev/Home9-WebDesign`
+2. Navigate to the project folder: `cd Home9-WebDesign`
 3. Open `index.html` in your browser to view the design.
 
-## Demo
-Add a link to the live demo or upload screenshots here.
 
 ---
 Developed as part of a personal learning journey in web development.
