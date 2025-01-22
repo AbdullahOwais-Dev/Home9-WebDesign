@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type = "png" href="img/nav-img.png">
+    <title>Home 9 | Web Design</title>
+  </head>
+  <body>
+ <div class="wrapper">
+
+<div class="content">
+  
+  <!-- navbar -->
+
+<nav class="navbar">
+<div class="menu-toggle .toggle-button.move-left" onclick="toggleMenu()">☰</div>
+<ul class="nav-links nav-links-left">
+<li><a href="#">The couple</a></li>
+<li><a href="#">Proposal</a></li>
+</li>
+<li><a href="#">Destination</a></li>
+</ul>
+<img src="img/nav-img.png" height="55" alt="logo" class="logo-nav" />
+<ul class="nav-links nav-links-right">
+<li><a href="#">Wedding</a></li>
+<li><a href="#">Accomodation</a></li>
+<li><a href="#">Registry</a></li>
+</ul>
+</nav>
+
+<!-- main content -->
+
+<div class="main-slider">
+<div class="slides">
+<img src="img/main-img.png" alt="Slide 1" />
+<img src="img/main-img.png" alt="Slide 2" />
+<img src="img/main-img.png" alt="Slide 3" />
+<img src="img/main-img.png" alt="Slide 4" />
+</div>
+<div class="slider-buttons">
+<button class="prev">&#10094;</button>
+<button class="next">&#10095;</button>
+</div>
+<div class="pagination-dots">
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+</div>   
+
+<!-- wedding slider -->
+
+<section class="wedding-slider-section">
+<button class="slider-arrow-button slider-arrow-left" onclick="moveSlide(-1)">&#9664;</button>
+<div class="slider-wrapper">
+  <div class="slider-single-item slider-left-item" onclick="expandImage(0)">
+      <img src="img/Layer 9.png" alt="Bride">
+      <h3 class="custom-font">Bride's Name</h3>
+      <p class="custom-font-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus quibusdam totam iusto dolores iure suscipit corrupti tempore. Voluptatem a eos, at deleniti cupiditate doloribus.</p>
+      <div class="social-icons">
+          <a href="#"><img src="img/google_enhanced.png" alt="Google"></a>
+          <a href="#"><img src="img/facebook_enhanced.png" alt="Facebook"></a>
+          <a href="#"><img src="img/twitter_enhanced.png" alt="Twitter"></a>
+      </div>
+  </div>
+  <div class="slider-single-item slider-center-item" onclick="expandImage(1)">
+      <img src="img/Layer 7.png" alt="Wedding Image">
+  </div>
+  <div class="slider-single-item slider-right-item" onclick="expandImage(2)">
+      <img src="img/Layer 8.png" alt="Groom">
+      <h3 class="custom-font">Groom's Name</h3>
+      <p class="custom-font-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus quibusdam totam iusto dolores iure suscipit corrupti tempore. Voluptatem a eos, at deleniti cupiditate doloribus.</p>
+      <div class="social-icons">
+          <a href="#"><img src="img/google_enhanced.png" alt="Google"></a>
+          <a href="#"><img src="img/facebook_enhanced.png" alt="Facebook"></a>
+          <a href="#"><img src="img/twitter_enhanced.png" alt="Twitter"></a>
+      </div>
+  </div>
+</div>
+<button class="slider-arrow-button slider-arrow-right" onclick="moveSlide(1)">&#9654;</button>
+</section>
+
+<!-- thanks -->
+
+<div class="thanks">
+  <p class="custom-font random-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <img src="img/Layer 12.png" alt="" />
+</div>
+
+<!-- timer -->
+
+<div class="timer-container">
+  <h1 class="custom-font wedding-timer">Wedding Timing</h1>
+  <div class="timer">
+    <div>
+      <span id="days">00</span>
+      <p>DAY</p>
+    </div>
+    <div>
+      <span id="hours">00</span>
+      <p>HOURS</p>
+    </div>
+    <div>
+      <span id="minutes">00</span>
+      <p>MINUTES</p>
+    </div>
+    <div>
+      <span id="seconds">00</span>
+      <p>SECONDS</p>
+    </div>
+  </div>
+</div>
+
+<!-- friends section -->
+
+<div class="thanks best-friends-heading">
+  <img src="img/Layer 12.png" alt="" />
+  <p class=" our-best-friends">Our Best Friends</p>
+<div class="friends-slider-container">
+  <button class="scroll-btn left-btn">❮</button>
+  <div class="friends-cards">
+    <div class="card card-1">
+      <img class="first-lady-img" src="img/lady1.png" alt="lady 1" />
+      <h2>Lawrence Stephens</h2>
+      <p>Bridesmaid</p>
+      <div class="social-under-friends">
+        <a href=""><img src="img/google_enhanced.png" width="24px" alt="google" /></a>
+        <a href=""><img src="img/facebook_enhanced.png" width="24px" alt="facebook" /></a>
+        <a href=""><img src="img/twitter_enhanced.png" width="24px" alt="twitter" /></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/lady2.png" alt="lady 2" />
+      <h2>Lawrence Stephens</h2>
+      <p>Bridesmaid</p>
+      <div class="social-under-friends">
+        <a href=""><img src="img/google_enhanced.png" width="24px" alt="google" /></a>
+        <a href=""><img src="img/facebook_enhanced.png" width="24px" alt="facebook" /></a>
+        <a href=""><img src="img/twitter_enhanced.png" width="24px" alt="twitter" /></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/lady3.png" alt="lady 1" />
+      <h2>Lawrence Stephens</h2>
+      <p>Bridesmaid</p>
+      <div class="social-under-friends">
+        <a href=""><img src="img/google_enhanced.png" width="24px" alt="google" /></a>
+        <a href=""><img src="img/facebook_enhanced.png" width="24px" alt="facebook" /></a>
+        <a href=""><img src="img/twitter_enhanced.png" width="24px" alt="twitter" /></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/lady4.png" alt="lady 2" />
+      <h2>Lawrence Stephens</h2>
+      <p>Bridesmaid</p>
+      <div class="social-under-friends">
+        <a href=""><img src="img/google_enhanced.png" width="24px" alt="google" /></a>
+        <a href=""><img src="img/facebook_enhanced.png" width="24px" alt="facebook" /></a>
+        <a href=""><img src="img/twitter_enhanced.png" width="24px" alt="twitter" /></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/lady1.png" alt="lady 1" />
+      <h2>Lawrence Stephens</h2>
+      <p>Bridesmaid</p>
+      <div class="social-under-friends">
+        <a href=""><img src="img/google_enhanced.png" width="24px" alt="google" /></a>
+        <a href=""><img src="img/facebook_enhanced.png" width="24px" alt="facebook" /></a>
+        <a href=""><img src="img/twitter_enhanced.png" width="24px" alt="twitter" /></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/lady2.png" alt="lady 2" />
+      <h2>Lawrence Stephens</h2>
+      <p>Bridesmaid</p>
+      <div class="social-under-friends">
+        <a href=""><img src="img/google_enhanced.png" width="24px" alt="google" /></a>
+        <a href=""><img src="img/facebook_enhanced.png" width="24px" alt="facebook" /></a>
+        <a href=""><img src="img/twitter_enhanced.png" width="24px" alt="twitter" /></a>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="img/lady3.png" alt="lady 1" />
+      <h2>Lawrence Stephens</h2>
+      <p>Bridesmaid</p>
+      <div class="social-under-friends">
+        <a href=""><img src="img/google_enhanced.png" width="24px" alt="google" /></a>
+        <a href=""><img src="img/facebook_enhanced.png" width="24px" alt="facebook" /></a>
+        <a href=""><img src="img/twitter_enhanced.png" width="24px" alt="twitter" /></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/lady4.png" alt="lady 2" />
+      <h2>Lawrence Stephens</h2>
+      <p>Bridesmaid</p>
+      <div class="social-under-friends">
+        <a href=""><img src="img/google_enhanced.png" width="24px" alt="google" /></a>
+        <a href=""><img src="img/facebook_enhanced.png" width="24px" alt="facebook" /></a>
+        <a href=""><img src="img/twitter_enhanced.png" width="24px" alt="twitter" /></a>
+      </div>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+  <button class="scroll-btn right-btn">❯</button>
+</div>
+<button  class="browse-more" style="display: none;">Scroll Right ></button>
+</div>
+
+<!-- wedding images section -->
+
+<div class="wedding-images-container">
+  <button class="scroll-btn left-btn">❮</button>
+  <div class="wedding-images">
+      <img class="per-wed-img" src="img/Layer 99.png" alt="">
+      <img class="per-wed-img" src="img/Layer 98.png" alt="">
+      <img class="per-wed-img" src="img/Layer 97.png" alt="">
+      <img class="per-wed-img" src="img/Layer 96.png" alt="">
+      <img class="per-wed-img" src="img/Layer 95.png" alt="">
+      <img class="per-wed-img" src="img/Layer 94.png" alt="">
+      <img class="per-wed-img" src="img/Layer 99.png" alt="">
+      <img class="per-wed-img" src="img/Layer 98.png" alt="">
+      <img class="per-wed-img" src="img/Layer 97.png" alt="">
+      <img class="per-wed-img" src="img/Layer 96.png" alt="">
+      <img class="per-wed-img" src="img/Layer 95.png" alt="">
+      <img class="per-wed-img" src="img/Layer 94.png" alt="">
+      <img class="per-wed-img" src="img/Layer 99.png" alt="">
+      <img class="per-wed-img" src="img/Layer 98.png" alt="">
+      <img class="per-wed-img" src="img/Layer 97.png" alt="">
+      <img class="per-wed-img" src="img/Layer 96.png" alt="">
+      <img class="per-wed-img" src="img/Layer 95.png" alt="">
+      <img class="per-wed-img" src="img/Layer 94.png" alt="">
+  </div>
+  <button class="scroll-btn right-btn">❯</button>
+</div>
+
+</div>
+<!-- footer -->
+    <div class="footer">
+        <img  class="logo logo-footer" src="/img/logo.png" alt="">
+
+        <div class="product-setion">
+            <h5>Products</h5>
+            <li>Price</li>
+            <li>Integerations</li>
+            <li>Online Shop</li>
+            <li>Mobile Apps</li>
+            <li>Download</li>
+        </div>
+
+        <div class="company-setion">
+            <h5>Company</h5>
+            <li>Events</li>
+            <li>Team</li>
+            <li>Jobs</li>
+            <li>Blog</li>
+        </div>
+
+        <div class="website-setion">
+            <h5>Website</h5>
+            <li>F A Q</li>
+            <li>Webinars</li>
+            <li>Contact Us</li>
+            <li>Terms . Privacy</li>
+        </div>
+
+        <div class="social social-corner">
+            <h3 class="social-text">Social Media</h3>
+            <img src="img/15707770.png" width="30px" alt="">
+            <img src="/img/twitter (1).png" width="30px" alt="">
+            <img class="twitter-logo" src="img/linkedin-logo.jpg" width="37px">
+        </div>
+    </div>
+
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>

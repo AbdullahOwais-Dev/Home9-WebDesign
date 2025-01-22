@@ -1,0 +1,1001 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+
+ @font-face {
+  font-family: 'Atelas';
+  src: url('fonts/Atelas_PersonalUseOnly.ttf') format('truetype'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url(fonts/Lato-Regular.ttf) format('truetype'); 
+  font-weight: normal; 
+  font-style: normal;  
+}
+.custom-font{
+  font-family: Atelas;
+  font-size: 34px;
+}
+.custom-font-2{
+  font-family: Lato;
+  color: #afaeae;
+  opacity: 0.8;
+}
+
+ .navbar {
+  margin-left: 0.8%;
+    display: flex;
+    justify-content: center;
+    /* gap: 80px; */
+    align-items: center;
+    /* padding: 10px 20px; */
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 70px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .logo {
+    margin: 0 auto;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: block;
+
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+    /* Main slider container */
+.main-slider {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 400%; /* 4 slides */
+}
+
+.slides img {
+  width: 25%;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  transform: translateY(-50%);
+  z-index: 10;
+  gap: 82%;
+}
+
+.slider-buttons button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+
+.pagination-dots {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.pagination-dots .dot {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.pagination-dots .dot.active {
+  opacity: 1;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center; 
+  }
+
+  .card, .wedding-image {
+    flex: 1 1 30%;
+    max-width: 30%; 
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .card img, .wedding-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .social-under-friends{
+    display: flex;
+  }
+
+  .social {
+    margin-top: 10px;
+  }
+
+  .social img {
+    margin: 0 5px;
+    vertical-align: middle;
+  }
+    
+.thanks, .friends, .thanks{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: xx-large;
+    color: #a5a5a5;
+}
+
+.friends-cards{
+    display: flex;
+    width: 1175px;
+    margin: auto;
+    gap: 90px;
+    color: black;
+}
+.wedding-images{
+    display: flex;
+    margin: 0px;
+}
+.per-wed-img{
+    width: 16.6%;
+    margin-top: 150px;
+}
+
+.wedding-card {
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wedding-card h3 {
+    font-size: 18px;
+    color: #87431d;
+    margin-bottom: 10px;
+}
+
+.wedding-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+.wedding-image{
+    flex: 0 0 20%
+}
+
+.footer{
+  bottom: 0%;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.logo-nav{
+    margin: 12px 50px;
+}
+.logo{
+  margin: 10px;
+}
+.footer li{
+    margin: 0 80px;
+}
+h5{
+    margin: 10px;
+}
+.social-text{
+    margin-bottom: 15px;
+}
+
+.wedding-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  padding: 20px;
+  flex-wrap: wrap;
+  margin-top: 5%; 
+}
+
+.wedding-card {
+  text-align: center;
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-icons a img {
+  width: 25px;
+  height: 25px;
+}
+
+.wedding-image {
+  margin: 20px auto;
+  display: block;
+}
+.social-text{
+    margin: 15px;
+}
+
+.friends {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .friends img {
+    width: 100px;
+    margin-top: 10px;
+  }
+  
+  .friends-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px; 
+    margin: 10px auto;
+    width: 1390px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #fff; */
+    padding: 20px 5px;
+    border-radius: 10px;
+    height: 340px; 
+    width: 100%;
+    max-width: 280px; 
+  }
+  
+  .card img {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 14px;
+    text-align: center;
+    color: #afaeae;
+  }
+  
+  .social {
+    display: block;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .footer {
+    align-items: flex-start;
+    background-color: #000000;
+    padding: 41px;
+    text-align: left;
+    gap: 50;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+  }
+
+  
+  .footer img.logo {
+    width: 160px;
+    margin-bottom: 10px;
+  }
+  
+  .footer h5 {
+    margin-bottom: 25px;
+    margin-left: 76px;
+    margin-right: 80px;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .social-corner{
+    margin-left: 7%;
+  }
+  .footer li {
+    font-size: 12px;
+    font-weight: 50;
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .logo-footer{
+    margin-right: 7%;
+  }
+  
+  .footer .social {
+    text-align: center;
+    /* margin-right: 8%; */
+    
+  }
+  
+  .footer .social-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer .social img {
+    margin: 5px 10px;
+    cursor: pointer;
+  }
+
+  .timer-container {
+    background: linear-gradient(to right, #6dd5ed, #cc2b5e);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/wedding-timing-background.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 4%;
+    padding-bottom: 3.5%;
+}
+
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .timer {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 20px;
+    border: 3px solid #fff;
+    background: #ffffff; 
+    margin: 0 auto; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+    outline: 3px solid #ffffff; 
+    outline-offset: 16px;
+    margin-top: 4%;
+  }
+
+  .timer-container::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/wedding-timing-background.png');
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .timer div {
+    text-align: center;
+  }
+  
+  .timer #days {
+    color: #00ff00; 
+  }
+  
+  .timer #hours {
+    color: #ff007f; 
+  }
+  
+  .timer #minutes {
+    color: #800080; 
+  }
+  
+  .timer #seconds {
+    color: #0000ff; 
+  }
+  
+  .timer div:nth-child(1) p {
+    color: #00ff00;
+  }
+  
+  .timer div:nth-child(2) p {
+    color: #ff007f;
+  }
+  
+  .timer div:nth-child(3) p {
+    color: #800080; 
+  }
+  
+  .timer div:nth-child(4) p {
+    color: #0000ff;
+  }
+  
+  .timer span {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .timer p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .twitter-logo{
+    border-radius: 50px;
+  }
+
+  .new-images {
+    display: flex;
+    margin: 0px; 
+    gap: 10px; 
+}
+
+.new-img {
+    width: 16.66%; /* Same layout as .per-wed-img */
+    margin-top: 100px; /* Adjust the top margin */
+    border: 2px solid #ddd; /* Optional: Add borders for styling */
+    border-radius: 5px; /* Optional: Rounded corners */
+    transition: transform 0.3s ease; /* Optional: Add hover effect */
+}
+
+.new-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Add a hover shadow */
+}
+
+.wedding-images {
+  transition: transform 0.5s ease-in-out; /* Smooth scrolling */
+}
+
+.scroll-btn {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent buttons */
+  color: #fff;
+  /* border: none; */
+  /* padding: 10px 20px; */
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-btn {
+  /* left: 10px; Position on the left */
+  left: 15px;
+  margin: 75px 3%;
+}
+
+.right-btn {
+  right: 10px; 
+  margin: 75px 3%;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker hover effect */
+}
+
+
+.wedding-images-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; /* Hide extra images */
+}
+.wedding-images::-webkit-scrollbar {
+  display: none;
+}
+
+.wedding-images {
+  /* display: flex; */
+  overflow-x: auto; 
+  scroll-behavior: smooth; 
+}
+
+.per-wed-img {
+  /* width: 16.66%; */
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.left-btn {
+  left: 10px;
+}
+
+.right-btn {
+  right: 10px;
+}
+
+.scroll-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* General Slider Styles */
+.friends-slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.friends-cards {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  max-width: calc(127% - 80px);  scrollbar-width: auto; /* Firefox scrollbar */
+}
+
+.friends-cards::-webkit-scrollbar {
+  height: 8px; /* Adjust scrollbar height */
+  display: none;
+}
+/* 
+.friends-cards::-webkit-scrollbar-track {
+  background: #923636;
+}
+
+.friends-cards::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.friends-cards::-webkit-scrollbar-thumb:hover {
+  background: #308e1b;
+} */
+
+/* Individual Card Styles */
+.card {
+  min-width: 279px;
+  margin: 23px 12px;
+  /* background: #f9f9f9; */
+  border-radius: 10px;
+  padding: 10px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  height: 100%;
+}
+.card-1 {
+  margin-left: 9%;
+}
+.first-lady-img{
+  width: 76%;
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.left-btn {
+  left: 5%;
+}
+
+.right-btn {
+  right: 5%;
+}
+
+/* Browse More Button */
+.browse-more {
+  display: none;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.wedding-slider-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 69%;
+  margin-top: 8%;
+  margin-left: 15%;
+}
+
+.wedding-timer{
+    font-weight: 500;
+    font-size: xxx-large;
+}
+
+.slider-wrapper {
+  display: flex;
+  /* gap: 20px; */
+  transition: transform 0.5s ease;
+}
+
+.slider-single-item {
+  text-align: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.slider-single-item img {
+  width: 310px;
+  height: 310px;
+  object-fit: scale-down;
+  transition: transform 0.5s ease;
+}
+
+.slider-single-item h3,
+.slider-single-item p {
+  margin-top: 10px;
+}
+
+.slider-center-item {
+  transform: scale(1.2);
+  z-index: 10;
+  margin-top: 6%;
+  margin-bottom: 15%;
+}
+
+.slider-left-item,
+.slider-right-item {
+  /* opacity: 0.6; */
+  transform: scale(0.8);
+}
+
+.slider-arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.slider-arrow-left {
+  left: 0%;
+}
+
+.slider-arrow-right {
+  right: 0%;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+.our-best-friends{
+  font-family: Atelas;
+  color: #000;
+  font-size: 34px;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .friends-cards {
+      max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .friends-cards {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      padding: 0;
+      /* margin: -15px; */
+      margin: 38px;
+  }
+
+  .browse-more {
+      display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+      min-width: 285px;
+      margin: 10px;
+  }
+
+  .browse-more {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+  }
+  .navbar{
+      margin-right: 105px;
+      margin-left: 80px;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .friends-cards {
+    grid-template-columns: 1fr;
+  }
+  .timer-container{
+    width: 100%;
+  }
+  .timer{
+    width: 102%;
+    gap: 1%;
+  }
+  .card {
+    height: 480px;
+    max-width: 50%; 
+  }
+}
+@media (max-width: 992px) {
+  .card, .wedding-image {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wedding-section {
+    flex-direction: row;
+  }
+
+  .wedding-image {
+    margin: 0 20px; 
+  }
+}
+
+@media (max-width: 1023px) {
+  .wedding-section {
+    flex-direction: column; 
+  }
+
+  .wedding-card, .wedding-image {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 1175px) {
+  .friends-cards {
+    grid-template-columns: repeat(2, 1fr); 
+    width: 100%;
+  }
+
+  .card {
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 350px) {
+  .timer-container {
+      width: 107%;
+  }
+}
+@media  (max-width: 480px) {
+  .card-1 {
+    margin-left: -6%;
+}
+}
+@media (max-width: 1175px) {
+  .footer {
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footer > div {
+    width: 45%;
+  }
+
+  .social img {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer > div {
+    width: 100%; 
+    margin-left: 0%;
+    margin-bottom: 20px;
+  }
+
+  .footer img.logo {
+    margin-bottom: 15px;
+    margin-left: 25px;
+  }
+
+  .social img {
+    width: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .slider-wrapper {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .slider-single-item {
+      opacity: 1;
+      transform: scale(1);
+      margin-bottom: 20px;
+  }
+
+  .slider-center-item {
+      transform: scale(1);
+  }
+
+  .slider-arrow-button {
+      display: none;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1520px;
+  margin: 0 auto; 
+}
